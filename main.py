@@ -4,7 +4,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 from PIL import Image
 import pytesseract
 from io import BytesIO
-pytesseract.pytesseract.tesseract_cmd = r"C:\Users\abhay_kssmart\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
+
 # -----------------------
 # Google Sheets Setup
 # -----------------------
