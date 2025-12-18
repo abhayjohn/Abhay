@@ -21,7 +21,7 @@ credentials = Credentials.from_service_account_info(
 client = gspread.authorize(credentials)
 
 # --- Open Sheet ---
-SHEET_NAME = "YOUR_SHEET_NAME_HERE"
+SHEET_NAME = "School_Master_Serial_Number_Capture"
 worksheet = client.open(SHEET_NAME).sheet1
 
 data = worksheet.get_all_records()
