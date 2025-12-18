@@ -14,7 +14,12 @@ SCOPE = ['https://spreadsheets.google.com/feeds',
 CREDS_FILE = "service_account.json"  # Your Service Account JSON
 GSHEET_NAME = "School_Master_Serial_Number_Capture"
 
-creds = ServiceAccountCredentials.from_json_keyfile_name(CREDS_FILE, SCOPE)
+
+creds = ServiceAccountCredentials.from_json_keyfile_dict(
+    st.secrets["gcp_service_account"],
+    SCOPE
+)
+
 client = gspread.authorize(creds)
 sheet_master = client.open(GSHEET_NAME).worksheet("school_master")
 sheet_serials = client.open(GSHEET_NAME).worksheet("smartboard_serials")
