@@ -2,5 +2,7 @@ streamlit
 pandas
 numpy
 openpyxl
-tesseract-ocr
 gspread
+oauth2client
+pillow
+pytesseract
