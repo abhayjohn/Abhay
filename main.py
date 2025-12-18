@@ -10,8 +10,7 @@ from io import BytesIO
 # -----------------------
 SCOPE = ['https://spreadsheets.google.com/feeds',
          'https://www.googleapis.com/auth/drive']
-
-CREDS_FILE = "service_account.json"  # Your Service Account JSON
+  # Your Service Account JSON
 GSHEET_NAME = "School_Master_Serial_Number_Capture"
 
 
